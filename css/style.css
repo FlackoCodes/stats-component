@@ -28,7 +28,8 @@ body {
 
 .card {
     background-color: hsl(244, 38%, 16%);
-    border-bottom-right-radius: 10px;
+    /* border-bottom-right-radius: 10px; */
+    border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 20px;
 }
@@ -69,6 +70,7 @@ img {
     height: 100%;
     object-fit: cover; 
     overflow: hidden;
+    border-radius: 0 10px 10px 0;
 
 }
 
@@ -77,7 +79,6 @@ img {
     .container{
         grid-template-columns: 1fr;
         padding: 3rem .5rem;
-
     }
 
     .flex-group{
@@ -86,7 +87,8 @@ img {
 
     .card{
         text-align: center;
-        border-top-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
     }
 
     .wrapper{
@@ -94,8 +96,8 @@ img {
     }
 
     .container img{
-        order: 1;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
+        border-bottom-right-radius: 0px;
     }
 }
